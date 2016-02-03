@@ -18,7 +18,6 @@ package test.mapper;
 import org.apache.ibatis.annotations.Select;
 
 public interface SampleMapper {
-  @Select("select name from person where id = #{id}")
   String select(Integer id);
 }
 
